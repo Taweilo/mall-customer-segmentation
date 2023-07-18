@@ -14,8 +14,8 @@ The objective of this study is to utilize Machine Learning methods to perform cu
 ## Repository structure 
 ```
 ├── Image
-│   ├── evaluation.jpg                           <- model summary table used in the README
-│   ├── heatmap.jpg                              <- heatmap image used in the README
+│   ├── Elbow Method.jpg                           <- model summary table used in the README
+│   ├── ..jpg                              <- heatmap image used in the README
 │   ├── lr summary table.jpg                     <- linear regression model summary table used in the README
 │   ├── original dataset.jpg                     <- original dataset image used in the README
 │   ├── pairplot.jpg                             <- pairplot of different variables used in the README
@@ -46,7 +46,7 @@ By considering these factors, businesses can make informed decisions when levera
 This project is a part of the Mall Customer Segmentation Data competition held on Kaggle (https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python). Exploratory data analysis (EDA) is used to analyze and investigate data sets and summarize their main characteristics, often employing data visualization methods. The purpose is to understand data and encourage the following analytics.
 
 * Original Dataset
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Original%20dataset.jpg" width="400">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/2.1 Original%20dataset.jpg" width="400">
  
 | Name | Modeling Role | Measurement Level| Description|
 | ---- | ------------- | ---------------- | ---------- |
@@ -57,7 +57,7 @@ This project is a part of the Mall Customer Segmentation Data competition held o
 | **Spending Score** | feature | int64  | Score assigned by the mall based on customer behavior and spending nature |
 
 * Statistics
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Statistics.jpg" width="300">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/2.2 Statistics.jpg" width="300">
  
 * Income Segmentation
  <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Income%20segmentation.jpg" width="400">
@@ -72,23 +72,23 @@ strictly required for clustering.
 
 ### 3.2 Different Approaches to Decide K (How many clusters)
 1. Simple Visual Inspection to Choose the Optimal K
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Visual%20inspection.jpg" width="500">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/3.1 Visual%20inspection.jpg" width="500">
 2. The Elbow Method with the Sum of Squared Errors
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Elbow%20Method.jpg" width="500">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/3.2 Elbow%20Method.jpg" width="500">
 3. The Silhouette Score to Pick Optimal Number of Clusters
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Silhouette%20Score.jpg" width="500">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/3.3 Silhouette%20Score.jpg" width="500">
 
  
 ## 4. Modeling   
 * K-means
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/K-means.jpg" width="500">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/4.1 K-means.jpg" width="500">
 
 * Hierarchical Clustering
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Hierarchical%20Clustering.jpg" width="500">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/4.2 Hierarchical%20Clustering.jpg" width="500">
 
 ## 5. Evaluation
 ### K-means
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Features%20of%20clusters.jpg" width="500">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/5.1 Features%20of%20clusters.jpg" width="500">
 Describe each segmentation: Based on the income and Spending score, 5 clusters can be categorized as:
 
 Cluster 0: Medium income, Midum Spending Score
