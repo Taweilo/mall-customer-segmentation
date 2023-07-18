@@ -9,7 +9,7 @@
 Badge [source](https://shields.io/)
  <img src="https://www.cleartouch.in/wp-content/uploads/2023/02/Customer-Segmentation.png" width="1100">
 
-In this project, we aim to optimize media spending for a business by leveraging data mining techniques to analyze the relationship between media spend and revenue. The company has been running multiple media channels to promote its products/services, and while it has ROI metrics to evaluate Key Performance Indicators (KPIs), it is more interested in understanding how media spend influences revenue. Through machine learning and inferencing techniques, we seek to predict sales based on media spend, enabling the company to allocate resources effectively and optimize its media channel management.
+The objective of this study is to utilize Machine Learning methods to perform customer segmentation. Customer segmentation involves dividing a market into distinct groups of customers who exhibit similar characteristics. By leveraging customer segmentation, companies can effectively identify and address unmet customer needs, gaining a competitive edge through the development of highly appealing products and services.
 
 ## Repository structure 
 ```
@@ -27,10 +27,25 @@ In this project, we aim to optimize media spending for a business by leveraging 
 ├── LICENSE.txt                                  <- license 
 ```
 ## 1. Business Understanding
-Via the regression, we can predict the sales from media spending. Therefore, the company would manage its media channel effectively. Several machine learning techniques were applied and the best predictor would be suggested. 
+Clustering, an unsupervised machine learning technique, is employed for customer segmentation. Clustering aims to discover inherent groups or clusters within data, without prior knowledge of their existence. The following highlights the advantages and disadvantages of utilizing clustering for customer segmentation.
+
+**Advantages of clustering**:<br>
+
+- Facilitates the identification of unexpected or unknown customer groups.
+- Provides flexibility and can be applied to diverse datasets.
+- Reduces the necessity for extensive expertise in understanding the relationship between customer demographics and behaviors.
+- Offers quick and scalable analysis, even with large datasets.
+
+**Disadvantages of clustering**:<br>
+- Generated customer groups may lack interpretability and clarity.
+- If the data does not incorporate customer behavior information, such as purchase history or service usage, the practical utilization of identified clusters might be challenging.
+
+By considering these factors, businesses can make informed decisions when leveraging clustering techniques for customer segmentation, ensuring meaningful and actionable insights that drive strategic success.
 
 ## 2. Data Understanding 
-The Sales & Media Spend data was loaded via Colab. The dataset is from Kaggle: https://www.kaggle.com/datasets/harrimansaragih/dummy-advertising-and-sales-data (also please see Data_Dummy Data HSS.csv attached). Basic data analysis was performed to identify the shape of data, get column names, find missing values, and generate descriptive statistics. The Pearson correlation matrix was calculated to find the pairwise correlation of the columns in the data. All columns in the data are visually represented as histograms. A correlation heatmap figure was generated to represent the correlation matrix.
+2.1 Data source: This project is a part of the Mall Customer Segmentation Data competition held on Kaggle. <br>
+2.2 Exploratory data analysis (EDA): it is used to analyze and investigate data sets and summarize their main characteristics, often employing data visualization methods. The purpose is to understand data and encourage the following analytics. <br>
+2.3 Feature engineering: this step is to clean data and deal with the data issue. Since our data is pretty clean, we just rename the feature in an intuitive way.
 
 * Original Dataset
  <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/original%20dataset.jpg" width="400">
@@ -53,27 +68,25 @@ The Sales & Media Spend data was loaded via Colab. The dataset is from Kaggle: h
  <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/pairplot.jpg" width="400">
  
 ## 3. Data Preparation 
-1. Define variables (X and y)
-2. Get dummy variables 
-3. Split the data into train and test datasets <br>
-   train: 2727 data<br>
-   test:  1819 data<br>
-  
+### 3.1. Standardize the data:To calculate their z-score.
+This is done in two steps, for each column:
+1. First, subtract the mean of the data from each data point. This centers the data
+around 0, to make the data easier to look at and interpret, although this is not
+strictly required for clustering.
+2. The second step is to divide the parameters by their standard deviation.
+### 3.2 Different appraches to Decide K (How many clusters)
+1. Simple Visual Inspection to Choose the Optimal K
+2. The Elbow Method with Sum of Squared Errors
+3. The Silhouette Score to Pick Optimal Number of Clusters
+
+ 
 ## 4. Modeling   
    <img src="https://global-uploads.webflow.com/5d3ec351b1eba4332d213004/6026b7494be6481c635b0f84_axkJOrqGKDEK3a6U4mf8fRr5t0FKQIVvbJhDFVFyINVnpkEcv54vLydIg4BOcmyl-cSRakxD3L5-JR8GXMuNU67F5eTXD7ZpL6-MEekv50k8lkEMvIT8ludrUxWOjhAZ8i1_-7eY.png" width="400">
    
 The trade-off between interpretability and performance of these ML models. Highly interpretable algorithms such as linear regression, are often inaccurate because of high bias but low variance. Very accurate DNNs are a classic example of black boxes, with low bias but high variance. However, the model performance is highly associated with the data type. Several models were included for further evaluation:
 
-* Linear Regression
-* LASSO Regression
-* Ridge Regression
-* Elastic Net
-* Decision Tree Regression
-* Support Vector Regression
-* K-Nearest Neighbors Regression
-* Random Forest Regression
-* Gradient Boosting Regression (e.g., XGBoost)
-* Neural Network Regression
+* K-means
+* Hierarchical Clustering
   
 ## 5. Evaluation
  <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/evaluation.jpg" width="500" >
@@ -101,4 +114,9 @@ y_pred = linear_regressor.predict(X_test)
 ```
 * Scatter plot of Prediction and Test data
  <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/y_pred%20vs%20y_test.jpg" width="500">
+
+## 7. Reference
+- Baig, M. R., Govindan, G., & Shrimali, V. R. (2021). Data Science for Marketing Analytics: A practical guide to forming a killer marketing strategy through data analysis with Python (2nd ed.), Chapter 3: Unsupervised Learning and
+Customer Segmentation (pp. 113-159). Packt Publishing. 
+- Sagar, A. (2019, August 24). Customer Segmentation Using K Means Clustering. https://towardsdatascience.com/customer-segmentation-using-k-means-clustering-d33964f238c3. 
  
