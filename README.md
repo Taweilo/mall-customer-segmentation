@@ -92,28 +92,13 @@ The trade-off between interpretability and performance of these ML models. Highl
  <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/evaluation.jpg" width="500" >
  
 ## 6. Recommendation
-### Inferencing
-The linear model has demonstrated superior performance, making it a compelling candidate for a detailed analysis. Its simplicity and interpretability allow us to draw meaningful inferences for the entire population. The below summary table shows the R-square, Global F, coefficient, and p-value of the model:
+The advantage of machine learning-based clustering is its ability to expedite the segmentation process and discover patterns without requiring extensive domain knowledge. There are various methods available for ML clustering, such as K-means, K-medians, and hierarchical clustering, each with its own strengths and limitations. In our specific case, K-means necessitates predefining the number of clusters (K), whereas hierarchical clustering can generate cluster groups based on different K values. It is crucial to compare the results of these techniques objectively.
 
- <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/lr%20summary%20table.jpg" width="500">
+Moreover, the choice of the number of segments (K) should align with business requirements. Fewer segments can provide a simplified and interpretable understanding of customers, while more segments allow for finer-grained customer segmentation. However, the clusters, regardless of their quality, hold no significance if they are not actionable for the business. Non-actionability can arise in two ways:
 
-* Adjusted R-square: 0.999 indicates that the model can explain approximately 99.9% of the variation in the dependent variable based on the independent variables included in the model. 
-* p-value of Global F: 0.00 means statistical significance, so we are reasonably sure at least one variable is not 0. There is a relationship between independent and dependent variables in the population. 
-* Model: Sales = -0.204 + 3.563 * (TV spend) + 0.007 * (Radio spend) + (-0.043) * (Social media spend) <br>
-                 + 0.057 * (Influencer_Mega) <br>
-                 + (-0.047) * (Influencer_Micro) <br>
-                 + (-0.069) * (Influencer_Nano) <br><br>
-**Influence_Macro is the reference group.** 
-
-* p-value: Only the variable TV is statistically significant suggesting that we are reasonably sure the coefficient of TV is not 0 in the population. 
-
-### Deployment
-* code to predict test data  
-```
-y_pred = linear_regressor.predict(X_test)
-```
-* Scatter plot of Prediction and Test data
- <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/y_pred%20vs%20y_test.jpg" width="500">
+The clusters lack business rationale.
+The number of clusters is excessively large.
+In essence, machine learning techniques must consider business value and strategy to ensure that the insights derived are meaningful and actionable. By doing so, these insights become invaluable and can drive impactful business decisions.
 
 ## 7. Reference
 - Baig, M. R., Govindan, G., & Shrimali, V. R. (2021). Data Science for Marketing Analytics: A practical guide to forming a killer marketing strategy through data analysis with Python (2nd ed.), Chapter 3: Unsupervised Learning and
