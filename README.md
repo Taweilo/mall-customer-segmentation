@@ -46,7 +46,7 @@ By considering these factors, businesses can make informed decisions when levera
 This project is a part of the Mall Customer Segmentation Data competition held on Kaggle (https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python). Exploratory data analysis (EDA) is used to analyze and investigate data sets and summarize their main characteristics, often employing data visualization methods. The purpose is to understand data and encourage the following analytics.
 
 * Original Dataset
- <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/original%20dataset.jpg" width="400">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Original%20dataset.jpg" width="400">
  
 | Name | Modeling Role | Measurement Level| Description|
 | ---- | ------------- | ---------------- | ---------- |
@@ -57,26 +57,26 @@ This project is a part of the Mall Customer Segmentation Data competition held o
 | **Spending Score** | feature | int64  | Score assigned by the mall based on customer behavior and spending nature |
 
 * Statistics
- <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/statistics.jpg" width="300">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Statistics.jpg" width="300">
  
-* Heatmap
- <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/heatmap.jpg" width="300">
-
-* Pairplot
- <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/pairplot.jpg" width="400">
+* Income Segmentation
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Income%20segmentation.jpg" width="400">
  
 ## 3. Data Preparation 
-### 3.1. Standardize the data:To calculate their z-score.
+### 3.1. Standardize the data: To calculate their z-score.
 This is done in two steps, for each column:
 1. First, subtract the mean of the data from each data point. This centers the data
 around 0, to make the data easier to look at and interpret, although this is not
 strictly required for clustering.
 2. The second step is to divide the parameters by their standard deviation.
 
-### 3.2 Different appraches to Decide K (How many clusters)
+### 3.2 Different approaches to Decide K (How many clusters)
 1. Simple Visual Inspection to Choose the Optimal K
-2. The Elbow Method with Sum of Squared Errors
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Visual%20inspection.jpg" width="500" >
+2. The Elbow Method with the Sum of Squared Errors
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Silhouette%20Score.jpg" width="500" >
 3. The Silhouette Score to Pick Optimal Number of Clusters
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Silhouette%20Score.jpg" width="500" >
 
  
 ## 4. Modeling   
