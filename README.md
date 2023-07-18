@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 Badge [source](https://shields.io/)
- <img src="https://ewm.swiss/application/files/3916/6365/7200/The_Future_of_Marketing_EWM_SA_Digital_Agency_Geneva.jpg" width="1100" height="450">
+ <img src="https://www.cleartouch.in/wp-content/uploads/2023/02/Customer-Segmentation.png" width="1100">
 
 In this project, we aim to optimize media spending for a business by leveraging data mining techniques to analyze the relationship between media spend and revenue. The company has been running multiple media channels to promote its products/services, and while it has ROI metrics to evaluate Key Performance Indicators (KPIs), it is more interested in understanding how media spend influences revenue. Through machine learning and inferencing techniques, we seek to predict sales based on media spend, enabling the company to allocate resources effectively and optimize its media channel management.
 
