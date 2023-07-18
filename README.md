@@ -14,13 +14,15 @@ The objective of this study is to utilize Machine Learning methods to perform cu
 ## Repository structure 
 ```
 ├── Image
-│   ├── Elbow Method.jpg                           <- model summary table used in the README
-│   ├── ..jpg                              <- heatmap image used in the README
-│   ├── lr summary table.jpg                     <- linear regression model summary table used in the README
-│   ├── original dataset.jpg                     <- original dataset image used in the README
-│   ├── pairplot.jpg                             <- pairplot of different variables used in the README
-│   ├── statistics.jpg                           <- statistics of variables used in the README
-│   ├── y_pred vs y_test.jpg                     <- scatterplot of the predictions with test value used in the README                                
+│   ├── 2.1 Original dataset.jpg                 <- original dataset used in the README
+│   ├── 2.2 Statistics.jpg                       <- statistics used in the README
+│   ├── 2.3 Income segmentation.jpg              <- Income segmentation used in the README
+│   ├── 3.1 Visual inspection.jpg                <- visual inspection to decide K used in the README
+│   ├── 3.2 Elbow Method.jpg                     <- Elbow Method to decide K used in the README
+│   ├── 3.3 Silhouette Score.jpg                 <- Silhouette Score to decide K used in the README
+│   ├── 4.1 K-means.jpg                          <- visual inspection of K-means method used in the README
+│   ├── 4.2 Hierarchical Clustering.jpg          <- visual inspection of Hierarchical Clustering used in the README
+│   ├── 5.1 Features of clusters.jpg             <- features of clusters used in the README                                  
 │
 ├── Code_Sales_Prediction_.ipynb                 <- python code
 ├── Data_Dummy Data HSS.csv                      <- dataset
@@ -57,7 +59,7 @@ This project is a part of the Mall Customer Segmentation Data competition held o
 | **Spending Score** | feature | int64  | Score assigned by the mall based on customer behavior and spending nature |
 
 * Statistics
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/2.2 Statistics.jpg" width="300">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/2.2 Statistics.jpg" width="400">
  
 * Income Segmentation
  <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Income%20segmentation.jpg" width="400">
