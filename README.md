@@ -81,12 +81,13 @@ strictly required for clustering.
  
 ## 4. Modeling   
 * K-means
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Pca%2Bk-means%20clustering.jpg" width="500">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/K-means.jpg" width="500">
 
 * Hierarchical Clustering
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Pca%2Bk-means%20clustering.jpg" width="500">
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Hierarchical%20Clustering.jpg" width="500">
 
 ## 5. Evaluation
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Features%20of%20clusters.jpg" width="500">
 Describe each segmentation of K-means
 Based on the income and Spending score, 5 clusters can be categorized as:
 (the exact average value can refer to the above table)
