@@ -74,16 +74,17 @@ strictly required for clustering.
 1. Simple Visual Inspection to Choose the Optimal K
  <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Visual%20inspection.jpg" width="500" >
 2. The Elbow Method with the Sum of Squared Errors
- <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Silhouette%20Score.jpg" width="500" >
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Elbow%20Method.jpg" width="500" >
 3. The Silhouette Score to Pick Optimal Number of Clusters
  <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Silhouette%20Score.jpg" width="500" >
 
  
 ## 4. Modeling   
 * PCA & K-means
-    
+ <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Pca%2Bk-means%20clustering.jpg" width="500" >
+
 ## 5. Evaluation
- <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/evaluation.jpg" width="500" >
+
  
 ## 6. Recommendation
 The advantage of machine learning-based clustering is its ability to expedite the segmentation process and discover patterns without requiring extensive domain knowledge. There are various methods available for ML clustering, such as K-means, K-medians, and hierarchical clustering, each with its own strengths and limitations. In our specific case, K-means necessitates predefining the number of clusters (K), whereas hierarchical clustering can generate cluster groups based on different K values. It is crucial to compare the results of these techniques objectively.
