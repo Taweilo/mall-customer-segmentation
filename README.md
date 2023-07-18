@@ -24,8 +24,8 @@ The objective of this study is to utilize Machine Learning methods to perform cu
 │   ├── 4.2 Hierarchical Clustering.jpg          <- visual inspection of Hierarchical Clustering used in the README
 │   ├── 5.1 Features of clusters.jpg             <- features of clusters used in the README                                  
 │
-├── Code_Sales_Prediction_.ipynb                 <- python code
-├── Data_Dummy Data HSS.csv                      <- dataset
+├── Code_Mall_Customer_Segmenation.ipynb         <- python code
+├── Data_Mall_Customers.csv                      <- dataset
 ├── LICENSE.txt                                  <- license 
 ```
 ## 1. Business Understanding
