@@ -43,20 +43,18 @@ Clustering, an unsupervised machine learning technique, is employed for customer
 By considering these factors, businesses can make informed decisions when leveraging clustering techniques for customer segmentation, ensuring meaningful and actionable insights that drive strategic success.
 
 ## 2. Data Understanding 
-2.1 Data source: This project is a part of the Mall Customer Segmentation Data competition held on Kaggle. <br>
-2.2 Exploratory data analysis (EDA): it is used to analyze and investigate data sets and summarize their main characteristics, often employing data visualization methods. The purpose is to understand data and encourage the following analytics. <br>
-2.3 Feature engineering: this step is to clean data and deal with the data issue. Since our data is pretty clean, we just rename the feature in an intuitive way.
+This project is a part of the Mall Customer Segmentation Data competition held on Kaggle (https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python). Exploratory data analysis (EDA) is used to analyze and investigate data sets and summarize their main characteristics, often employing data visualization methods. The purpose is to understand data and encourage the following analytics.
 
 * Original Dataset
  <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/original%20dataset.jpg" width="400">
  
 | Name | Modeling Role | Measurement Level| Description|
 | ---- | ------------- | ---------------- | ---------- |
-| **TV** | input | float | TV promotion budget (in million) |
-| **Radio** | input | float | Radio promotion budget (in million) |
-| **Social Media** | input | float | Social Media promotion budget (in million) |
-| **Influencer** | input | Object | Type of Influencers |
-| **Sales** | target | float | Sales in million |
+| **CustomerID** | feature | int64  | Unique ID assigned to the customer |
+| **Gender** | feature | Object  | Gender of the customer |
+| **Age** | feature| int64  | Age of the customer |
+| **Annual Income (k$)** | feature | int64  | Annual Income of the customer |
+| **Spending Score** | feature | int64  | Score assigned by the mall based on customer behavior and spending nature |
 
 * Statistics
  <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/statistics.jpg" width="300">
