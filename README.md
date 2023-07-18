@@ -72,6 +72,7 @@ This is done in two steps, for each column:
 around 0, to make the data easier to look at and interpret, although this is not
 strictly required for clustering.
 2. The second step is to divide the parameters by their standard deviation.
+
 ### 3.2 Different appraches to Decide K (How many clusters)
 1. Simple Visual Inspection to Choose the Optimal K
 2. The Elbow Method with Sum of Squared Errors
@@ -79,13 +80,8 @@ strictly required for clustering.
 
  
 ## 4. Modeling   
-   <img src="https://global-uploads.webflow.com/5d3ec351b1eba4332d213004/6026b7494be6481c635b0f84_axkJOrqGKDEK3a6U4mf8fRr5t0FKQIVvbJhDFVFyINVnpkEcv54vLydIg4BOcmyl-cSRakxD3L5-JR8GXMuNU67F5eTXD7ZpL6-MEekv50k8lkEMvIT8ludrUxWOjhAZ8i1_-7eY.png" width="400">
-   
-The trade-off between interpretability and performance of these ML models. Highly interpretable algorithms such as linear regression, are often inaccurate because of high bias but low variance. Very accurate DNNs are a classic example of black boxes, with low bias but high variance. However, the model performance is highly associated with the data type. Several models were included for further evaluation:
-
-* K-means
-* Hierarchical Clustering
-  
+* PCA & K-means
+    
 ## 5. Evaluation
  <img src="https://github.com/Taweilo/Sales_Prediction_from_Media_Spend/blob/main/Image/evaluation.jpg" width="500" >
  
