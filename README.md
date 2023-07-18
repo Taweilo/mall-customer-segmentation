@@ -70,7 +70,7 @@ around 0, to make the data easier to look at and interpret, although this is not
 strictly required for clustering.
 2. The second step is to divide the parameters by their standard deviation.
 
-### 3.2 Different approaches to Decide K (How many clusters)
+### 3.2 Different Approaches to Decide K (How many clusters)
 1. Simple Visual Inspection to Choose the Optimal K
  <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Visual%20inspection.jpg" width="500">
 2. The Elbow Method with the Sum of Squared Errors
@@ -87,10 +87,9 @@ strictly required for clustering.
  <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Hierarchical%20Clustering.jpg" width="500">
 
 ## 5. Evaluation
+### K-means
  <img src="https://github.com/Taweilo/Mall_Customer_Segmentation/blob/main/Image/Features%20of%20clusters.jpg" width="500">
-Describe each segmentation of K-means
-Based on the income and Spending score, 5 clusters can be categorized as:
-(the exact average value can refer to the above table)
+Describe each segmentation: Based on the income and Spending score, 5 clusters can be categorized as:
 
 Cluster 0: Medium income, Midum Spending Score
 Cluster 1: High Income, Low Spending Score
